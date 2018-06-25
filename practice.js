@@ -74,9 +74,9 @@ dog.bark = function(){
   return "Woof woof";
 }; //Code Here
 
-//Store the result of invoking the bark method in a variable called ruff.
+ //Store the result of invoking the bark method in a variable called ruff.
 
-//Code Here
+ var ruff = bark();//Code Here
 
 //////////////////PROBLEM 6////////////////////
 
@@ -89,7 +89,15 @@ dog.bark = function(){
 
 //Return mySum.
 
-//Code Here
+
+var looper = function(arr1){
+  var mySum=0;
+for (var i=0; i<arr1.length;i++){
+  if(arr1[i]!=0||arr1[i]>=100){
+    mySum+=i;    
+  }
+  return mySum;
+}//Code Here
 
 //////////////////PROBLEM 7////////////////////
 
@@ -97,17 +105,19 @@ dog.bark = function(){
 
 function math(num1, num2, callback) {
   return callback(num1, num2);
-}
+};
 
 //Write a function called add that takes in two parameters and
 //returns the result of adding them together.
 
-//Code Here
+var add= function(a,b){
+  return a+b;
+}; //Code Here
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
-//Code Here
+math(3,4,add);//Code Here
 
 //////////////////PROBLEM 8////////////////////
 
@@ -122,7 +132,9 @@ function sampleCallbackTwo() {
   return "I am also a callback function";
 }
 
-//Code Here
+var invoker =funtion(sampleCallbackOne){
+  return "I am a callback function";
+} //Code Here
 
 //////////////////PROBLEM 9////////////////////
 
@@ -170,4 +182,5 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
-//Code Here
+var outerFn=(anonyFunc)=>anonyFunc();
+var anonyFunc=()=>"Rachel"; //Code Here

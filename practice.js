@@ -132,9 +132,10 @@ function sampleCallbackTwo() {
   return "I am also a callback function";
 }
 
-var invoker =funtion(sampleCallbackOne){
+var invoker =function(sampleCallbackOne){
   return "I am a callback function";
-} //Code Here
+} 
+//Code Here
 
 //////////////////PROBLEM 9////////////////////
 
@@ -183,4 +184,5 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 //Now invoke innerFn and save the result to a variable called finalResult.
 
 var outerFn=(anonyFunc)=>anonyFunc();
-var anonyFunc=()=>"Rachel"; //Code Here
+var anonyFunc=()=>"Rachel"; 
+//Code Here
